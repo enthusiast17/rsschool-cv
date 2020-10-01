@@ -7,7 +7,7 @@ Email: ulan17nurym@gmail.com
 
 ---
 ### Summary
-I am an enthusiastic and curious person. I've never explore frontend development. So the `RS School` is really good start for me. Also, I am interested in dev tools. I think, javascript language will help me to create some tools and scripts. I hope I will get good experience. Good luck to me.
+I am an enthusiastic and curious person. I've never explore frontend development. So the `RS School` is really good start for me. Also, I am interested in dev tools. I think, javascript language will help me to create some dev tools and scripts. I hope I will get a good experience. Good luck to me.
 
 ---
 ### Skills
@@ -15,6 +15,7 @@ I am an enthusiastic and curious person. I've never explore frontend development
 - Java (Android)
 - Basic HTML and CSS
 - Bash
+- Git, Github
 
 ---
 ### Code example
@@ -64,9 +65,11 @@ I am an enthusiastic and curious person. I've never explore frontend development
 
 ---
 ### Education
-- Alem school, 2019-current
-- HTMLAcademy, 2020, HTML&CSS
+- alem school, 2019 - current
+- HTMLAcademy, 2020
 
 ---
-### English
-Pre-intermediate (А2)
+### Languages
+- Kazakh - native
+- Russian - fluent
+- English - pre-intermediate (А2)
