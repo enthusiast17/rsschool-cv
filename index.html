@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ulan Nurym CV</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <img src="https://avatars1.githubusercontent.com/u/52827869?s=400&u=fa49f4c32f3db4a377bbd4dbf9a49099d3f9a34d&v=4" alt="avatar" width="200" height="200" />
+            <h1>Ulan Nurym</h1>
+            <a href="https://github.com/enthusiast17"><img src="img/github.png" alt="github logo" width="30"
+                height="30"></a>
+        </header>
+        <main>
+            <section>
+                <h2>Contact Info</h2>
+                <p>
+                    Email:
+                    <a href="mailto:ulan17nurym@gmail.com">ulan17nurym@gmail.com</a>
+                </p>
+            </section>
+            <section>
+                <h2>Summary</h2>
+                <p>
+                    I am an enthusiastic and curious person. I've never explore frontend
+                    development. So the <em><b>RS School</b></em> is really good start for me. Also, I
+                    am interested in dev tools. I think, javascript language will help me
+                    to create some tools and scripts. I hope I will get a good experience.
+                    Good luck to me.
+                </p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Go</li>
+                    <li>Java (Android)</li>
+                    <li>Basic HTML and CSS</li>
+                    <li>Bash</li>
+                    <li>Git, Github</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Code example</h2>
+                <pre>
+                    <code>
+package student
+
+func Min(root *TreeNode) *TreeNode {
+    if root == nil {
+        return root
+    }
+    it := root
+    for it.Left != nil {
+        it = it.Left
+    }
+    root = it
+    return root
+}
+
+func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
+    if root == nil || node == nil {
+        return root
+    }
+
+    if node.Left == nil {
+        root = BTreeTransplant(root, node, node.Right)
+    } else if node.Right == nil {
+        root = BTreeTransplant(root, node, node.Left)
+    } else {
+        minBTree := Min(node.Right)
+        if minBTree.Parent != node {
+            root = BTreeTransplant(root, minBTree, minBTree.Right)
+            minBTree.Right = node.Right
+            minBTree.Right.Parent = minBTree
+        }
+        root = BTreeTransplant(root, node, minBTree)
+        minBTree.Left = node.Left
+        minBTree.Left.Parent = node
+    }
+
+    return root
+}
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h2>Exprience</h2>
+                <ul>
+                    <li>
+                        f3s - parse flags from args,
+                        <a href="https://github.com/enthusiast17/f3s">Git</a>
+                    </li>
+                    <li>
+                        TimeTable - an android app for students,
+                        <a href="https://github.com/ulan17/timetable">Git</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>alem school, 2019 - current</li>
+                    <li>HTMLAcademy, 2020</li>
+                </ul>
+            </section>
+            <section class="last-section">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Kazakh - native</li>
+                    <li>Russian - fluent</li>
+                    <li>English - pre-intermediate (А2)</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
